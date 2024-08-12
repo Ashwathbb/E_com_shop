@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Department_BFF.props" />
+</Project>

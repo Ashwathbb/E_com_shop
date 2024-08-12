@@ -1,0 +1,17 @@
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Shop.Repository.deps.json
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Shop.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Shop.Repository.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Shop.DataAccess.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Shop.DataAccess.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Dept.DataAcess.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.csproj.AssemblyReference.cache
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.AssemblyInfoInputs.cache
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.AssemblyInfo.cs
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Rep.277DBBEE.Up2Date
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\refint\Shop.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\ref\Shop.Repository.dll

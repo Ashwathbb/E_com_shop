@@ -1,0 +1,17 @@
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\bin\Debug\net8.0\Shop.DataAccess.deps.json
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\bin\Debug\net8.0\Shop.DataAccess.runtimeconfig.json
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\bin\Debug\net8.0\Shop.DataAccess.dll
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\bin\Debug\net8.0\Shop.DataAccess.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\bin\Debug\net8.0\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\bin\Debug\net8.0\Dept.DataAcess.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.AssemblyInfo.cs
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.Dat.45C5795A.Up2Date
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.dll
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\refint\Shop.DataAccess.dll
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.pdb
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\Shop.DataAccess.genruntimeconfig.cache
+C:\Users\ashwathb\source\repos\Project\Shop.DataAccess\obj\Debug\net8.0\ref\Shop.DataAccess.dll

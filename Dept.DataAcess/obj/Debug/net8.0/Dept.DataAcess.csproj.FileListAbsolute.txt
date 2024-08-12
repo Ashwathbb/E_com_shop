@@ -1,0 +1,14 @@
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\bin\Debug\net8.0\Dept.DataAcess.deps.json
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\bin\Debug\net8.0\Dept.DataAcess.runtimeconfig.json
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\bin\Debug\net8.0\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\bin\Debug\net8.0\Dept.DataAcess.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.csproj.AssemblyReference.cache
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.AssemblyInfoInputs.cache
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.AssemblyInfo.cs
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.csproj.CoreCompileInputs.cache
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\refint\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.genruntimeconfig.cache
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\ref\Dept.DataAcess.dll

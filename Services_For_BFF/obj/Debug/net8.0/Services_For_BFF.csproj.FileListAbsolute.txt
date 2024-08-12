@@ -1,0 +1,12 @@
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.csproj.AssemblyReference.cache
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.AssemblyInfoInputs.cache
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.AssemblyInfo.cs
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.csproj.CoreCompileInputs.cache
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\bin\Debug\net8.0\Services_For_BFF.deps.json
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\bin\Debug\net8.0\Services_For_BFF.dll
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\bin\Debug\net8.0\Services_For_BFF.pdb
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.dll
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\refint\Services_For_BFF.dll
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\Services_For_BFF.pdb
+C:\Users\ashwathb\source\repos\Project\Services_For_BFF\obj\Debug\net8.0\ref\Services_For_BFF.dll

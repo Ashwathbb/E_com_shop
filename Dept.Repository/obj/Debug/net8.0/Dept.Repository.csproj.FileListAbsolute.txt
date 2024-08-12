@@ -1,0 +1,15 @@
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\bin\Debug\net8.0\Dept.Repository.deps.json
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\bin\Debug\net8.0\Dept.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\bin\Debug\net8.0\Dept.Repository.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\bin\Debug\net8.0\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\bin\Debug\net8.0\Dept.DataAcess.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.csproj.AssemblyReference.cache
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.AssemblyInfoInputs.cache
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.AssemblyInfo.cs
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Rep.56EC50D7.Up2Date
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\refint\Dept.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\ref\Dept.Repository.dll

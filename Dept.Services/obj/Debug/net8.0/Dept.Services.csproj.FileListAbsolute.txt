@@ -1,0 +1,17 @@
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.Services.deps.json
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.Services.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.Services.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.DataAcess.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Services\bin\Debug\net8.0\Dept.Repository.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.csproj.AssemblyReference.cache
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.AssemblyInfoInputs.cache
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.AssemblyInfo.cs
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.csproj.CoreCompileInputs.cache
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Ser.9C2C10B5.Up2Date
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\refint\Dept.Services.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\Dept.Services.pdb
+C:\Users\ashwathb\source\repos\Project\Dept.Services\obj\Debug\net8.0\ref\Dept.Services.dll
