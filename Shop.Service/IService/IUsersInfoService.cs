@@ -1,4 +1,5 @@
 ﻿using Shop.DataAccess.DTOs;
+using Shop.DataAccess.Models;
 
 namespace Shop.Service.IService
 {
@@ -12,6 +13,10 @@ namespace Shop.Service.IService
         UsersInfoDto Authenticate(string username, string password);
 
         public void AddUserProducts(UserProductSelectionDto userProductSelection);
+
+        Task<AuthResponseDto> LoginAsync(LoginDto loginDto);
+        Task<RegisterDto> RegisterAsync(RegisterDto registerDto);
+        Task<RegisterDto> GetUserByUsernameAsync(string username);
     }
 }
  

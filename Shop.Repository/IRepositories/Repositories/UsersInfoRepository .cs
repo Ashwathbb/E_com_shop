@@ -6,6 +6,8 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Dept.DataAcess.Dto;
 using Shop.DataAccess.Models;
+using Nest;
+using Microsoft.CodeAnalysis.Scripting;
 //using Shop.DataAccess.Models;
 
 namespace Shop.Repository.IRepositories.Repositoriescc
@@ -168,6 +170,63 @@ namespace Shop.Repository.IRepositories.Repositoriescc
             return users;
         }
 
-       
+        /* login logic */
+        //public async Task<RegisterDto> GetUserByUsernameAsync(string username)
+        //{
+        //    var sql = "SELECT * FROM UsersInfo WHERE UsersInfo UserName=@UserName";
+        //    var user = await _dbConnection.QuerySingleOrDefaultAsync<RegisterDto>(sql, new { UserName = username });
+        //    return user;
+
+        //}
+
+        //public async Task<RegisterDto> RegisterUserAsync(RegisterDto user, string password)
+        //{
+        //    //user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
+        //    //_shopDbContext.UsersInfos.Add(user);
+        //    //await _shopDbContext .SaveChangesAsync();
+        //    //return user;
+        //    throw new NotImplementedException();
+        //}
+
+
+        public async Task<RegisterDto> GetUserByUsernameAsync(string username)
+        {
+            var user = await _shopDbContext.UsersInfos.SingleOrDefaultAsync(u => u.UserName == username);
+            if (user == null) return null;
+
+            return new RegisterDto
+            {
+                UserName = user.UserName,
+                EmailId = user.EmailId,
+                PhoneNumber = user.PhoneNumber,
+              
+            };
+        }
+
+        public async Task<RegisterDto> RegisterUserAsync(RegisterDto userDto, string password)
+        {
+            var user = new UsersInfo
+            {
+                UserName = userDto.UserName,
+                EmailId = userDto.EmailId,
+                Password = BCrypt.Net.BCrypt.HashPassword(password),
+                PhoneNumber = userDto.PhoneNumber,
+              
+            };
+
+            _shopDbContext.UsersInfos.Add(user);
+            await _shopDbContext.SaveChangesAsync();
+
+            return userDto;
+        }
+        public async Task<LoginRole> GetRoleByNameAsync(string roleName)
+        {
+            return await _shopDbContext.LoginRoles.SingleOrDefaultAsync(r => r.RoleName == roleName);
+        }
+        public async Task AddUserAsync(UsersInfo user)
+        {
+            await _shopDbContext.UsersInfos.AddAsync(user);
+            await _shopDbContext.SaveChangesAsync();
+        }
     }
 }

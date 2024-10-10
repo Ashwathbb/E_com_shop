@@ -13,3 +13,4 @@ C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Rep
 C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\refint\Dept.Repository.dll
 C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.pdb
 C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\ref\Dept.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Dept.Repository\obj\Debug\net8.0\Dept.Repository.sourcelink.json

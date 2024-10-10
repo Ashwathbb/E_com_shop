@@ -15,3 +15,6 @@ C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Rep
 C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\refint\Shop.Repository.dll
 C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.pdb
 C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\ref\Shop.Repository.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\bin\Debug\net8.0\Shop.Repository.runtimeconfig.json
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.sourcelink.json
+C:\Users\ashwathb\source\repos\Project\Shop.Repository\obj\Debug\net8.0\Shop.Repository.genruntimeconfig.cache

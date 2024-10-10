@@ -26,7 +26,7 @@ namespace Shop.Service.IService.Services
             _productRepository.AddProduct(productDto);
         }
 
-        public void UpdateProduct(ProductDto productDto)
+        public void UpdateProduct(ProductDto1 productDto)
         {
             _productRepository.UpdateProduct(productDto);
         }
@@ -35,5 +35,11 @@ namespace Shop.Service.IService.Services
         {
             _productRepository.DeleteProduct(id);
         }
+
+        public IEnumerable<ProductDto1> GetProducts()
+        {
+            return _productRepository.GetProducts();
+        }
+
     }
 }

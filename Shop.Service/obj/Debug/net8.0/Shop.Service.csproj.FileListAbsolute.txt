@@ -19,3 +19,4 @@ C:\Users\ashwathb\source\repos\Project\Shop.Service\obj\Debug\net8.0\refint\Shop
 C:\Users\ashwathb\source\repos\Project\Shop.Service\obj\Debug\net8.0\Shop.Service.pdb
 C:\Users\ashwathb\source\repos\Project\Shop.Service\obj\Debug\net8.0\Shop.Service.genruntimeconfig.cache
 C:\Users\ashwathb\source\repos\Project\Shop.Service\obj\Debug\net8.0\ref\Shop.Service.dll
+C:\Users\ashwathb\source\repos\Project\Shop.Service\obj\Debug\net8.0\Shop.Service.sourcelink.json

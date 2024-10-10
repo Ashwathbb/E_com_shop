@@ -1,4 +1,6 @@
-﻿using Shop.DataAccess.DTOs;
+﻿using Dept.DataAcess.Models;
+using Shop.DataAccess.DTOs;
+using Shop.DataAccess.Models;
 
 namespace Shop.Repository.IRepositories.Repositoriescc
 {
@@ -14,8 +16,11 @@ namespace Shop.Repository.IRepositories.Repositoriescc
         Task<IEnumerable<UsersInfoDepartment>> GetAllUsersAsync();
         Task<UsersInfoDto> GetUserById(Guid userId);
         UsersInfoDto GetUserByUsername(string username, string password);
+     // update
         void UpdateUser(UsersInfoDto entity);
         void UpdateUserLoginAttempts(int userId, int failedLoginAttempts);
         void UpdateUserLoginAttemptsAndBlock(int userId, int failedLoginAttempts, bool isActive);
+       
+
     }
 }

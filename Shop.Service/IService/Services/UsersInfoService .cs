@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Diagnostics;
+﻿using Microsoft.CodeAnalysis.Scripting;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Shop.DataAccess.DTOs;
+using Shop.DataAccess.Models;
 using Shop.Repository.IRepositories;
 //using Shop.Repository.IRepositories.Repositories;
 
@@ -9,10 +11,11 @@ namespace Shop.Service.IService.Services
     {
 
         private readonly IUserRepository _userRepository;
-
-        public UsersInfoService(IUserRepository userRepository)
+        private readonly IJwtTokenGenerator _jwtTokenGenerator;
+        public UsersInfoService(IUserRepository userRepository, IJwtTokenGenerator jwtTokenGenerator)
         {
             _userRepository = userRepository;
+            _jwtTokenGenerator = jwtTokenGenerator;
         }
 
         public async Task<IEnumerable<UsersInfoDto>> GetAllUsers()
@@ -72,5 +75,38 @@ namespace Shop.Service.IService.Services
             _userRepository.AddUserProducts(userProductSelection.UserId, userProductSelection.ProductIds);
         }
 
+        public async Task<RegisterDto> GetUserByUsernameAsync(string username)
+        {
+            return await _userRepository.GetUserByUsernameAsync(username);
+        }
+
+        public async Task<AuthResponseDto> LoginAsync(LoginDto loginDto)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(loginDto.UserName);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
+            {
+                throw new Exception("Invalid credentials.");
+            }
+
+            var token = _jwtTokenGenerator.GenerateToken(user.UserName);
+
+            return new AuthResponseDto
+            {
+                Token = token,
+                UserName = user.UserName
+            };
+        }
+
+        public async Task<RegisterDto> RegisterAsync(RegisterDto registerDto)
+        {
+            var existingUser = await _userRepository.GetUserByUsernameAsync(registerDto.UserName);
+            if (existingUser != null)
+            {
+                throw new Exception("User already exists.");
+            }
+
+            return await _userRepository.RegisterUserAsync(registerDto, registerDto.Password);
+        }
     }
 }
+

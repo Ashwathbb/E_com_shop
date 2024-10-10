@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Dept.DataAcess.Dto;
 using Dept.DataAcess.Models;
+using Humanizer.Localisation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Logging;
 //using Department.DataAcess.Dto;
 using System.Data;
 using System.Data.Common;
+using System.Security.Cryptography;
 
 namespace Dept.Repository.Repositories
 {
@@ -30,8 +32,7 @@ namespace Dept.Repository.Repositories
         }
         public async Task<IEnumerable<DepartmentDto>> GetAllDepartmentsAsync()
         {
-
-
+         
             var sql = "SELECT * FROM Department";
             var departments = await _dbConnection.QueryAsync<DepartmentDto>(sql);
             foreach (var department in departments)
@@ -167,6 +168,7 @@ namespace Dept.Repository.Repositories
 
         public async Task InsertDepartmentAsync(DepartmentDto departmentDto)
         {
+          
             var department = new Department
             {
                 DepartmentGuid = departmentDto.DepartmentGuid,
@@ -180,6 +182,23 @@ namespace Dept.Repository.Repositories
 
             await _context.Departments.AddAsync(department);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task someLinqoperation()
+        {
+            // all this lines to work with linq where cluses 
+         var result=await _context.Departments.ToListAsync();
+
+         var result2=await _context.Departments.Where(d=>d.DepartmentName=="string").ToListAsync();
+         var result3=await _context.Departments.Where(d=>d.DepartmentName=="string" && d.DepartmentId==0).ToListAsync();
+         var result4 = await _context.Departments.Where(d => d.DepartmentName.Contains("n")).ToListAsync();
+         var result5 = await _context.Departments.Where(d=>d.DepartmentName.Length==5).ToListAsync();
+         var result6 = await _context.Departments.Where(d => d.DepartmentName.StartsWith("s")).ToListAsync();
+         var result7 = await _context.Departments.Where(d=> d.DepartmentName=="Human Resources"
+                                                                         && d.Roles.Any(x=>x.DepartmentId==1)).ToListAsync();
+         var resulut8=await _context.Departments.Where(d=>d.DepartmentName=="string" && d.Roles.Any(x=>x.RoleName== "string")).ToListAsync();
+
+         
         }
     }
 }

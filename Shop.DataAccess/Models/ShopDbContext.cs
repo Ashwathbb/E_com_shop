@@ -19,7 +19,11 @@ public partial class ShopDbContext : DbContext
 
     public virtual DbSet<Country> Countries { get; set; }
 
+    public virtual DbSet<LoginRole> LoginRoles { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
+
+    public virtual DbSet<UserRole> UserRoles { get; set; }
 
     public virtual DbSet<UsersInfo> UsersInfos { get; set; }
 
@@ -56,15 +60,46 @@ public partial class ShopDbContext : DbContext
             entity.Property(e => e.Name).HasMaxLength(100);
         });
 
+        modelBuilder.Entity<LoginRole>(entity =>
+        {
+            entity.HasKey(e => e.RoleId).HasName("PK__Login_ro__8AFACE1A795CCE84");
+
+            entity.ToTable("Login_role");
+
+            entity.HasIndex(e => e.RoleName, "UQ__Login_ro__8A2B61609C171416").IsUnique();
+
+            entity.Property(e => e.RoleName).HasMaxLength(50);
+        });
+
         modelBuilder.Entity<Product>(entity =>
         {
             entity.HasKey(e => e.ProductId).HasName("PK__Product__B40CC6CDB83F2039");
 
             entity.ToTable("Product");
 
+            entity.Property(e => e.CategoryName).HasMaxLength(100);
+            entity.Property(e => e.CreatedDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.DeliveryTimeSpan).HasMaxLength(50);
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.ProductGuid).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.ProductShortName).HasMaxLength(100);
+            entity.Property(e => e.ProductSku).HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<UserRole>(entity =>
+        {
+            entity.HasKey(e => e.UserRoleId).HasName("PK__UserRole__3D978A35E3CC974A");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.UserRoles)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("FK__UserRoles__RoleI__1AD3FDA4");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserRoles)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserRoles__UserI__19DFD96B");
         });
 
         modelBuilder.Entity<UsersInfo>(entity =>
@@ -78,6 +113,7 @@ public partial class ShopDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.Password).HasMaxLength(10);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(15);
             entity.Property(e => e.UserName)
                 .HasMaxLength(50)
                 .IsUnicode(false);

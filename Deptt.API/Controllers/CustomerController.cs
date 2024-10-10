@@ -11,10 +11,13 @@ namespace Deptt.API.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerServices _services;
+
         public CustomerController(ICustomerServices customerServices)
         {
             _services = customerServices;
         }
+
+      
         [HttpGet]
         public async Task<IActionResult> GetAllCustomers()
         {

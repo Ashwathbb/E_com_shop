@@ -10,9 +10,10 @@ namespace Shop.Repository.IRepositories
     public interface IProductRepository
     {
         IEnumerable<ProductDto> GetAllProducts();
+        IEnumerable<ProductDto1> GetProducts();
         ProductDto GetProductById(int id);
         void AddProduct(ProductDto entity);
-        void UpdateProduct(ProductDto entity);
+        void UpdateProduct(ProductDto1 entity);
         void DeleteProduct(int id);
     }
 }

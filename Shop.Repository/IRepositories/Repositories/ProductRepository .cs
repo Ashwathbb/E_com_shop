@@ -1,22 +1,36 @@
 ﻿using System.Data;
+using AutoMapper;
 using Dapper;
 using Shop.DataAccess.DTOs;
+using Shop.DataAccess.Models;
 
 namespace Shop.Repository.IRepositories.Repositories
 {
     public class ProductRepository : IProductRepository
     {
         private readonly IDbConnection _dbConnection;
-
-        public ProductRepository(IDbConnection dbConnection)
+        private readonly IMapper _mapper;
+        public ProductRepository(IDbConnection dbConnection, IMapper mapper)
         {
             _dbConnection = dbConnection;
+            _mapper = mapper;
         }
 
         public IEnumerable<ProductDto> GetAllProducts()
         {
             var sql = "SELECT * FROM Product";
             return _dbConnection.Query<ProductDto>(sql);
+        }
+        public IEnumerable<ProductDto1> GetProducts()
+        {
+            var sql = "SELECT * FROM Product";
+            // Retrieve data from the database using Dapper
+            var products = _dbConnection.Query<ProductDto1>(sql);
+
+            // Map the results to ProductDto1 using AutoMapper
+            var productDtos = _mapper.Map<List<ProductDto1>>(products);
+
+            return productDtos;
         }
 
         public ProductDto GetProductById(int id)
@@ -31,9 +45,9 @@ namespace Shop.Repository.IRepositories.Repositories
             _dbConnection.Execute(sql, entity);
         }
 
-        public void UpdateProduct(ProductDto entity)
+        public void UpdateProduct(ProductDto1 entity)
         {
-            var sql = "UPDATE Product SET Name = @Name, Price = @Price WHERE ProductId = @ProductId";
+            var sql = "UPDATE Product SET Name = @Name,Price = @Price,ProductSku=@ProductSku,ProductShortName=@ProductShortName,ProductDescription=@ProductDescription,DeliveryTimeSpan=@DeliveryTimeSpan,ProductImageUrl=@ProductImageUrl WHERE ProductId = @ProductId";
             _dbConnection.Execute(sql, entity);
         }
 
@@ -42,5 +56,7 @@ namespace Shop.Repository.IRepositories.Repositories
             var sql = "DELETE FROM Product WHERE ProductId = @Id";
             _dbConnection.Execute(sql, new { Id = id });
         }
+        // Map entities to DTOs
+      
     }
 }

@@ -12,3 +12,4 @@ C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\refint\De
 C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.pdb
 C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.genruntimeconfig.cache
 C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\ref\Dept.DataAcess.dll
+C:\Users\ashwathb\source\repos\Project\Dept.DataAcess\obj\Debug\net8.0\Dept.DataAcess.sourcelink.json

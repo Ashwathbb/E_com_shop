@@ -1,4 +1,5 @@
 ﻿using Shop.DataAccess.DTOs;
+using Shop.DataAccess.Models;
 using System.Threading.Tasks;
 
 namespace Shop.Repository.IRepositories
@@ -20,6 +21,11 @@ namespace Shop.Repository.IRepositories
         void UpdateUserLoginAttemptsAndBlock(int userId, int failedLoginAttempts, bool isActive);
         void AddUserProducts(int userId, List<int> productIds);
         Task<IEnumerable<UsersInfoDto>> GetAllUsers();
+        //for registraion and login
+        Task<RegisterDto> GetUserByUsernameAsync(string username);
+        Task<RegisterDto> RegisterUserAsync(RegisterDto user, string password);
+        Task<LoginRole> GetRoleByNameAsync(string roleName);
+        Task AddUserAsync(UsersInfo user);
     }
 }
 

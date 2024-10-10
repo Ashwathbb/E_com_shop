@@ -18,5 +18,6 @@ namespace Dept.Repository.Repositories
         Task InsertCustomerAsync(CustomerDto customerDto);
         Task InsertDepartmentAsync(DepartmentDto departmentDto);
         Task<IDbContextTransaction> BeginTransactionAsync();
+        Task someLinqoperation();
     }
 }

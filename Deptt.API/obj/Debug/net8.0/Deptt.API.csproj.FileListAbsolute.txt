@@ -300,3 +300,4 @@ C:\Users\ashwathb\source\repos\Project\Deptt.API\obj\Debug\net8.0\refint\Deptt.A
 C:\Users\ashwathb\source\repos\Project\Deptt.API\obj\Debug\net8.0\Deptt.API.pdb
 C:\Users\ashwathb\source\repos\Project\Deptt.API\obj\Debug\net8.0\Deptt.API.genruntimeconfig.cache
 C:\Users\ashwathb\source\repos\Project\Deptt.API\obj\Debug\net8.0\ref\Deptt.API.dll
+C:\Users\ashwathb\source\repos\Project\Deptt.API\obj\Debug\net8.0\Deptt.API.sourcelink.json

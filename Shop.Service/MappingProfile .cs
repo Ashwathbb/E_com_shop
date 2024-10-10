@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Dept.DataAcess.Dto;
 using Dept.DataAcess.Models;
+using Shop.DataAccess.DTOs;
+using Shop.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +42,8 @@ namespace Shop.Service
                 .ForMember(dest => dest.SaleId, opt => opt.MapFrom(src => src.SalesID))
                 .ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Amount))
                 .ForMember(dest => dest.OrderId, opt => opt.MapFrom(src => src.OrderID));
+            CreateMap<Product, ProductDto>();
+            CreateMap<ProductDto, Product>();
         }
     }
 }

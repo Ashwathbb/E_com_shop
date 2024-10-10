@@ -3,6 +3,7 @@ using Dept.DataAcess.Models;
 using Dept.Services.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Deptt.API.Controllers
 {
@@ -11,9 +12,38 @@ namespace Deptt.API.Controllers
     public class DepartmentController : ControllerBase
     {
         private readonly IDepartmentService _departmentService;
-        public DepartmentController(IDepartmentService departmentService)
+        private readonly DepartmentDbContext _context;
+        public DepartmentController(IDepartmentService departmentService, DepartmentDbContext context)
         {
             _departmentService = departmentService;
+            _context = context;
+        }
+        [HttpGet("linq-operations")]
+        public async Task<IActionResult> GetLinqOperations()
+        {
+         
+
+            var result2 = await _context.Departments.Where(d => d.DepartmentName == "string").ToListAsync();
+            var result3 = await _context.Departments.Where(d => d.DepartmentName == "string" && d.DepartmentId == 0).ToListAsync();
+            var result4 = await _context.Departments.Where(d => d.DepartmentName.Contains("n")).ToListAsync();
+            var result5 = await _context.Departments.Where(d => d.DepartmentName.Length == 5).ToListAsync();
+            var result6 = await _context.Departments.Where(d => d.DepartmentName.StartsWith("s")).ToListAsync();
+            var result7 = await _context.Departments.Where(d => d.DepartmentName == "Human Resources" && d.Roles.Any(x => x.DepartmentId == 1)).ToListAsync();
+            var result8 = await _context.Departments.Where(d => d.DepartmentName == "string" && d.Roles.Any(x => x.RoleName == "string")).ToListAsync();
+
+            var response = new
+            {
+             
+                Result2 = result2,
+                Result3 = result3,
+                Result4 = result4,
+                Result5 = result5,
+                Result6 = result6,
+                Result7 = result7,
+                Result8 = result8
+            };
+
+            return Ok(response);
         }
         [HttpGet]
         public async Task<IActionResult> GetAllDepartments()
