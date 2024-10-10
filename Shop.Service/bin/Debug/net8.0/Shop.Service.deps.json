@@ -2280,7 +2280,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "Dept.DataAcess.dll": {}
+          "Dept.DataAcess.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Shop.DataAccess/1.0.0": {
@@ -2293,7 +2296,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0-preview.6.24358.4"
         },
         "runtime": {
-          "Shop.DataAccess.dll": {}
+          "Shop.DataAccess.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Shop.Repository/1.0.0": {
@@ -2305,7 +2311,10 @@
           "Shop.DataAccess": "1.0.0"
         },
         "runtime": {
-          "Shop.Repository.dll": {}
+          "Shop.Repository.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
